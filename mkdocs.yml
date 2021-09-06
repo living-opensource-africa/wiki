@@ -1,0 +1,41 @@
+site_name: Living Open Source Foundation Wiki
+#site_url: 
+repo_url: 'https://github.com/orgs/living-opensource-africa/wiki'
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: light
+      primary: 'orange'
+      accent: 'orange'
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: 'deep orange'
+      accent: 'amber'
+      toggle:
+        icon:  material/weather-night
+        name: Switch to light mode
+  features:
+    - search.suggest
+    - search.highlight
+
+extra:
+  social:
+    - icon: 'fontawesome/brands/github'
+      link: 'https://github.com/orgs/living-opensource-africa/'
+    - icon: 'fontawesome/brands/telegram'
+      link: 'https://github.com/orgs/living-opensource-africa/'
+
+markdown_extensions:
+  - toc:
+      toc_depth: 3
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+plugins:
+  - search
+  #  - social
