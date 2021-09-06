@@ -1,6 +1,6 @@
-site_name: Living Open Source Foundation Wiki
+site_name: Living Open Source Africa Wiki
 #site_url: 
-repo_url: 'https://github.com/orgs/living-opensource-africa/wiki'
+repo_url: 'https://github.com/living-opensource-africa/wiki'
 theme:
   name: material
   palette:

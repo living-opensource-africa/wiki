@@ -8,3 +8,7 @@ authors:
 # Welcome to Living Open Source Africa 
 
 This is the wiki for LOS Africa
+
+!!! warning "Alert" 
+    The site is under construction!!! 
+    Please help us improve the wiki by contributing.
