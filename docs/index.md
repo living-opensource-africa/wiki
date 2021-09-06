@@ -1,5 +1,5 @@
 ---
-title: LOS Africa
+title: Welcome!
 summary: Welcome to Living Open Source Africa 
 date: 2021-09-06
 authors:
