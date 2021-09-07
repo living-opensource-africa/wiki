@@ -18,14 +18,22 @@ authors:
 
 - Visit `man 5 cron` for explanation
 - `/var/spool/cron` directory where cron checks for user jobs
+- A field be specified as follows
+    - list of comma separated values `1,4,6`
+    - range of values (inclusive).  `8–11`
+    - steps values in conjunction with range `0–4,8–12`
+    - `*` to indicate all
 
-During the exam, you can have a handy way of 
 
-```bash
-cat /etc/crontab >> /var/spool/cron/$USER
-```
+!!! tip "Exam Tip"
+    To have something to reference at when creating taks run the following:
+    ```bash
+    cat /etc/crontab >> /var/spool/cron/$USER
+    ```
 
-## cron.allow and cron.deny files
+## Managing Access to crontab
+
+cron.allow and cron.deny files can be used to specify who can access crontab command.
 
 - If `/etc/cron.deny` exists it will implicity allow users to 
 run `/etc/crontab -e` and will disallow listed users.
@@ -60,6 +68,5 @@ runs the command on the 15th of every month, and every Friday at 12:15
     When the Day of month and Day of week fields are both other than *,
     the command is executed when either of these two fields are satisfied.
 
-
-
-https://crontab.guru
+## Resource
+- [Cron Checker](https://crontab.guru)
