@@ -8,20 +8,20 @@ authors:
 ## Terminal Tricks
 
 - `cd -` move(return) back to previous directory
-- `ctrl  + l` clear screen
+- ++ctrl+l++ clear screen
 
 ### Moving around
-- `ctrl + a ` to jump to the begining of a line
-- `ctrl + e ` to jump to the end of the line
-- `ctrl + u ` remove everything on the left-hand side of the cursor 
-- `ctrl + k ` remove everything on the right-hand side of the cursor 
-- `ctrl + arrow_keys`
+- ++ctrl+a++ to jump to the begining of a line
+- ++ctrl+e++ to jump to the end of the line
+- ++ctrl+u++ remove everything on the left-hand side of the cursor 
+- ++ctrl+k++ remove everything on the right-hand side of the cursor 
+- ++ctrl+left++ or ++ctrl+right++
 
 ## Vim tricks
 
 - **vimtutor**
 - `: set nu` or `: set number` to show line number 
-- `LINE + G` or `: LINE` to jump to LINE
-- `$` to move to end of line
-- `gg` to move to the end of a file
-- `G` to move to the start of a file
+- ++"LINE"+shift+"g"++ or `: LINE` to jump to LINE
+- ++"$"++ to move to end of line
+- ++"g"+"g"++ to move to the end of a file
+- ++shift+"g"++ to move to the start of a file

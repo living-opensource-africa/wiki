@@ -36,7 +36,6 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.details
-
+  - pymdownx.keys
 plugins:
   - search
-  #  - social
