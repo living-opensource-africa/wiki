@@ -22,15 +22,41 @@ We are glad that you have decided to contribute to **LOS Africa Wiki**.
 
 
 ---
+## Setting up your Enviroment 
 
-- section: setup enviroment 
-    - installing python
-    - setting up python virtual enviroment
-    - install mkdocs
-    - setting up vscode
+In this section I will be covering how to install `mkdocs`, the wiki app. (# I will be using python virtual enviroment )
+
+1. Install the latest version of `python3` and `pip`.
+```console
+sudo apt install python3 python3-pip 
+```
+
+2. Create a virtual enviroment.
+```bash
+mkdir ~/python-virtual-environments && cd ~/python-virtual-environments
+```
+Let's create a new python virtual enviroment and call it mkdocs 
+```bash
+python3 -m venv mkdocs
+```
+
+3. Activate your python env and install `mkdocs-material`.
+```bash
+source ~/python-virtual-environments/mkdocs/bin/activate
+```
+If you are using fish shell the file is `activate.fish` instead of `activate`
+```bash
+python3 -m pip install mkdocs-material
+```
+Every time you want to work with mkdocs you need to activate the virtual env.
+ 
+Read more on python virtual enviroments [here](https://realpython.com/python-virtual-environments-a-primer/)
+
+--- 
 
 - section: ssh keypair
 
-- section : Writing
+- section : Writing is based on markdown 
     - Write new document
     - Metadata
+    - setting up vscode
