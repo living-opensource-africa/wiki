@@ -5,6 +5,10 @@ authors:
   - Muse Sisay
 ---
 
+## Mounting Partitions persistently
+
+- TODO 
+  - using uuid,label and path
 
 ## Setting up partition label 
 
