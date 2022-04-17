@@ -11,7 +11,7 @@ authors:
 - ++ctrl+l++ clear screen
 
 ### Moving around
-- ++ctrl+a++ to jump to the begining of a line
+- ++ctrl+a++ to jump to the beginning of a line
 - ++ctrl+e++ to jump to the end of the line
 - ++ctrl+u++ remove everything on the left-hand side of the cursor 
 - ++ctrl+k++ remove everything on the right-hand side of the cursor 
@@ -48,7 +48,7 @@ $ nfsstat --mounts
 
 ## Snippets 
 
-- Disbaling all enabled reposiotries. 
+- Disabling all enabled repositories. 
 ```console
 $ sed -i 's/enabled=1/enabled=0/' /etc/yum.repos.d/*
 $ yum clean all
@@ -76,3 +76,40 @@ allow mongod_t cgroup_t:dir search;
 allow mongod_t cgroup_t:file { getattr open read };
 EOF
 ```
+
+## Setting up your lab
+
+- Here are some tips to consider when setting up your lab environment
+
+**TIP 1**: download the full ISO.  
+**TIP 2**: disable k-dump during installation  
+**TIP 3**: setup a local repository for faster package install
+
+### Setting up local repository
+
+- Create fstab entry for the ISO. Assumed the ISO is mounted on /dev/sr0
+```console
+sudo mkdir /iso-data
+sudo echo "/dev/sr0 /iso-data    iso9660   defaults 0 0" >> /etc/fstab
+```
+- Set a local repo
+```console
+cat > /etc/yum.repos.d/local.repo <<EOF
+[baseos]
+name=local baseos
+baseurl=file:///iso-data/BaseOS
+enabled=1
+gpgcheck=0
+
+[appstream]
+name=local appstream
+baseurl=file:///iso-data/AppStream
+enabled=1
+gpgcheck=0
+EOF
+```
+
+// more update coming to this section
+
+---
+- It's worth-while to learn `tmux`.
